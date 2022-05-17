@@ -1,9 +1,40 @@
 {{#partial "content"}}
-<h1>HERO-SQUAD APP</h1>
-<h2>Welcome To Your All-Time Hero Squad Point!</h2>
-<div class="container">
+<h1 class="headings">HERO-SQUAD APP</h1>
+<h2 class="headings">Welcome To Your All-Time Hero Squad Point!</h2>
+<div class="col-12">
 <p> This is a Java/Spark application that allows for adding hero participants to their </br>
     respective squad teams for the favorable competition.</p>
+</div>
+<div class="col-12">
+  <form action="/squad" method="post" name="squad">
+      <div class="col-12">
+          <label for="squad">Create Squad</label>
+          <input name="squad" type="text" placeholder="">
+      </div>
+     <div>
+         <label for="squad">Add Hero</label>
+         <input name="Hero" type="text" placeholder="">
+     </div>
+     <div>
+         <label for="hero">Pick special abilities</label>
+         <select name="Special Abilities">
+             <option>ghosting</option>
+             <option>unique powers</option>
+             <option>resilience</option>
+             <option>immortal</option>
+             <option>dangerous</option>
+         </select>
+     </div>
+     <div>
+         <label for="hero">Special Weakness</label>
+         <select name="Special Weakness">
+             <option>fragile</option>
+             <option>communication flaws</option>
+             <option>vision impairment</option>
+             <option>irreparable</option>
+         </select>
+     </div>
+  </form>
 </div>
 {{/partial}}
 
