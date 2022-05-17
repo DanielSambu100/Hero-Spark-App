@@ -22,8 +22,8 @@ JUnit v5
 ## Setup Installations Requirements
 To run the application, in your terminal:
 1. Clone or download the Repository
-2. cd into directory then run `cd Hero-Squad`
-3. Rebuild the Project Using Intellij IDEA or ...
+2. cd into directory then run `cd Hero-Squad-App`
+3. Rebuild the Project Using Intellij IDEA or your favorite IDE.
 4. Open terminal command line then navigate to the root folder of the application.
 5. Run `gradle run` command.
 6. Navigate to `http://localhost:4567/` in your browser.
