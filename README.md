@@ -19,6 +19,8 @@ CSS (Bootstrap)
 
 JUnit v5
 
+Handlebars Template Engine
+
 ## Setup Installations Requirements
 To run the application, in your terminal:
 1. Clone or download the Repository
