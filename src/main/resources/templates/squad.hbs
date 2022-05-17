@@ -4,9 +4,12 @@
 
 {{#partial "content"}}
     <h3>Your Squad Listing is:</h3>
-    <p>{{squadName}}</p>
-    <p>{{maxSize}}</p>
-    <p>{{squadCause}}</p>
+    {{#each squadList}}
+        {{squadName}}
+        {{maxSize}}
+        {{squadCause}}
+        <hr>
+    {{/each}}
 {{/partial}}
 
 {{> layout.hbs}}

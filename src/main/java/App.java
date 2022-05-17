@@ -33,7 +33,7 @@ public class App {
             list.add("heroAge");
             list.add("heroAbility");
             list.add("heroWeakness");
-            map.put("list",list);
+            map.put("heroList",list);
             return new ModelAndView(model, "hero.hbs"); // assemble individual pieces and render
         }, new HandlebarsTemplateEngine()); //
 

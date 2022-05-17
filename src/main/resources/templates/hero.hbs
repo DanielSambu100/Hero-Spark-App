@@ -4,10 +4,13 @@
 
 {{#partial "content"}}
 <h3>Your Hero Listing is:</h3>
-   <p>{{heroName}}</p>
-   <p>{{heroAge}}</p>
-   <p>{{heroAbility}}</p>
-   <p>{{heroWeakness}}</p>
+{{#each heroList}}
+    {{heroName}}
+    {{heroAge}}
+    {{heroAbility}}
+    {{heroWeakness}}
+    <hr>
+    {{/each}}
 {{/partial}}
 
 {{> layout.hbs}}
