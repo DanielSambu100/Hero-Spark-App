@@ -22,13 +22,13 @@ public class App {
         port(getHerokuAssignedPort());
         staticFileLocation("/public");
         get("/", (request, response) -> {
-            Map<String, Object> model = new HashMap<String, Object>(); // new model is made to store information
+            Map<String, Object> model = new HashMap<>(); // new model is made to store information
             return new ModelAndView(model, "index.hbs"); // assemble individual pieces and render
         }, new HandlebarsTemplateEngine()); //
 
         get("/hero",(request, response) -> {
             List<Object> list=new ArrayList<>();
-            Map<String, Object> model = new HashMap<String, Object>(); // new model is made to store information
+            Map<String, Object> model = new HashMap<>(); // new model is made to store information
             list.add("heroName");
             list.add("heroAge");
             list.add("heroAbility");
@@ -39,11 +39,11 @@ public class App {
 
         get("/squad",(request, response) -> {
             List<Object> list=new ArrayList<>();
-            Map<String, Object> model = new HashMap<String, Object>(); // new model is made to store information
+            Map<String, Object> model = new HashMap<>(); // new model is made to store information
             list.add("squadName");
             list.add("maxSize");
             list.add("squadCause");
-            map.put("list",list);
+            map.put("squadList",list);
             return new ModelAndView(model, "squad.hbs"); // assemble individual pieces and render
         }, new HandlebarsTemplateEngine()); //
         }
